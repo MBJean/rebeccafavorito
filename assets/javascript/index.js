@@ -1,5 +1,5 @@
-const navigationAnimator = function(target, height, currentPosition) {
-  if (currentPosition >= (height * 0.75 - 15)) {
+const navigationAnimator = function(target, currentPosition) {
+  if (currentPosition >= 100) {
     target.classList.add('nav__container--active');
   } else {
     target.classList.remove('nav__container--active');
@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
   let navTimer;
 
   if (primaryNavigation) {
-    navigationAnimator(primaryNavigation, window.innerHeight, window.pageYOffset);
+    navigationAnimator(primaryNavigation, window.pageYOffset);
     document.addEventListener('scroll', function() {
-      navigationAnimator(primaryNavigation, window.innerHeight, window.pageYOffset);
+      navigationAnimator(primaryNavigation, window.pageYOffset);
     });
   }
 

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
   line-height: 1;
@@ -30,7 +34,9 @@ h3 {
   text-transform: uppercase;
 }
 
-h4 {
+h4,
+.h--4 {
+  font-family: $font-body;
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 1rem;

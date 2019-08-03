@@ -10,11 +10,39 @@
   max-width: 725px;
 }
 
+.hero--about {
+  > :first-child {
+    margin-bottom: 2rem;
+  }
+  > :nth-child(2) {
+    text-align: center;
+  }
+  img {
+    border-radius: 50%;
+    box-shadow: $box-shadow;
+    height: auto;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+}
+
 @media (min-width: 768px) {
   .hero {
     padding-top: calc(3em + 20vh);
   }
   .hero--landing {
     padding-bottom: 20vh;
+  }
+  .hero--about {
+    display: flex;
+    align-items: center;
+    > :first-child {
+      width: 75%;
+    }
+    > :nth-child(2) {
+      margin-bottom: 0;
+      margin-left: 2rem;
+      width: 25%;
+    }
   }
 }
