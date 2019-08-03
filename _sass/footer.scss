@@ -1,2 +1,33 @@
 .footer {
+  margin: auto;
+  max-width: 1000px;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.footer__social-media-links {
+  display: flex;
+  justify-content: center;
+  > :not(:last-child) {
+    margin-right: 1rem;
+  }
+  img {
+    height: auto;
+    transition: transform 0.3s ease;
+    width: 2rem;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 4rem 2rem;
+    text-align: auto;
+    width: 100%;
+  }
 }

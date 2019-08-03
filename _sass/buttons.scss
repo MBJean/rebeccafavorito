@@ -5,12 +5,13 @@
   color: $white;
   display: inline-block;
   font-family: $font-body;
+  font-weight: normal;
   padding: 1.1rem 2.2rem;
-  text-transform: uppercase;
   &:hover,
   &:focus,
   &:visited {
     color: $white;
+    text-decoration: none;
   }
 }
 
@@ -28,5 +29,6 @@
   &:focus,
   &:visited {
     color: $font-color;
+    text-decoration: none;
   }
 }

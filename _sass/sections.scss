@@ -1,20 +1,58 @@
-.section--hero {
-  align-items: center;
-  display: flex;
-  height: 75vh;
-  justify-content: space-around;
-  margin-bottom: 4rem;
-  position: relative;
-}
-
-.section--container {
-  margin: 4rem auto;
-  max-width: 1112px;
+.section {
+  margin: auto;
+  max-width: 1000px;
   padding: 0 1rem;
 }
 
+.section--featured {
+  color: $white;
+  padding: 1rem;
+  a.btn {
+    margin-top: 2rem;
+  }
+}
+
+.section--featured-growl {
+  background-color: $blue1;
+}
+.section--featured-chase {
+  background-color: $blue2;
+}
+.section--featured-latin-toolkit {
+  background-color: $green1;
+}
+.section--featured-zeit {
+  background-color: $green2;
+}
+
+
 @media (min-width: 768px) {
-  .section--container {
-    padding: 0 2rem;
+  .section--featured {
+    padding: 3rem;
+  }
+  .section--content-left,
+  .section--content-right {
+    display: flex;
+    > :first-child {
+      flex-basis: 45%;
+    }
+    > :nth-child(2) {
+      flex-basis: 55%;
+    }
+  }
+
+  .section--content-left {
+    > :first-child {
+      padding-right: 2rem;
+    }
+  }
+
+  .section--content-right {
+    > :first-child {
+      order: 2;
+    }
+    > :nth-child(2) {
+      padding-right: 2rem;
+    }
   }
 }
