@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const primaryNavigation = document.querySelector('#primary-navigation');
   const portfolioButton = document.querySelector('#portfolio-button');
   const portfolioDropdown = document.querySelector('#portfolio-dropdown.nav__dropdown');
+  const portfolioImages = document.querySelectorAll('.portfolio__image');
+  const portfolioPanel = document.querySelector('#portfolio-panel');
+  const portfolioPanelBackground = document.querySelector('#portfolio-panel-background');
+  const portfolioPanelButton = document.querySelector('#portfolio-panel-button');
   let navTimer;
 
   if (primaryNavigation) {
@@ -46,4 +50,31 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 500);
     });
   }
+
+if (portfolioPanel) {
+  portfolioPanelButton.addEventListener('click', () => {
+    portfolioPanel.classList.remove('portfolio__image-panel--active');
+  });
+  portfolioPanelBackground.addEventListener('click', () => {
+    portfolioPanel.classList.remove('portfolio__image-panel--active');
+  });
+  portfolioImages.forEach(image => {
+    image.addEventListener('click', (event) => {
+      const oldImg = document.querySelector('#portfolio-panel-image');
+      if (oldImg) {
+        oldImg.remove();
+      }
+      portfolioPanel.classList.add('portfolio__image-panel--active');
+      const originalSrc = event.target.src;
+      const originalAlt = event.target.alt;
+      const newSrc = event.target.src.replace('portfolio-thumbnails', 'portfolio-high-resolution');
+      const newImg = document.createElement('img');
+      newImg.src = newSrc;
+      newImg.alt = originalAlt;
+      newImg.id = 'portfolio-panel-image';
+      newImg.classList.add('portfolio__image-panel-image');
+      portfolioPanel.appendChild(newImg);
+    });
+  });
+}
 });

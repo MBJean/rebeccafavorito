@@ -1,7 +1,17 @@
 .section {
-  margin: 0 auto 2rem;
+  margin: 0 auto 4rem;
   max-width: 1000px;
   padding: 0 1rem;
+}
+
+.section--no-padding {
+  margin: 0;
+  max-width: 1000px;
+  padding: 0;
+}
+
+.section--no-padding:not(:last-child) {
+  margin-bottom: 4rem;
 }
 
 .section--featured,
@@ -75,7 +85,7 @@
 
 @media (min-width: 768px) {
   .section {
-    margin: 0 auto 4rem;
+    margin: 0 auto 6rem;
     padding: 0 2rem;
   }
   .section--featured,

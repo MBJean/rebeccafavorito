@@ -1,0 +1,149 @@
+.portfolio__nav {
+  background-color: $white;
+  margin-bottom: 4rem;
+}
+
+.portfolio__nav-inner {
+  margin: auto;
+  max-width: 1000px;
+  padding: 1rem;
+}
+
+.portfolio__nav-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  > * {
+    margin: 0.5rem;
+  }
+}
+
+.portfolio__research-goals:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.portfolio__side-by-side {
+  > :first-child {
+    margin-bottom: 2rem;
+  }
+}
+
+.portfolio__card {
+  padding: 2rem 1rem;
+}
+
+.portfolio__card--green {
+  background-color: $green1;
+  color: $white;
+}
+
+.portfolio__image-container {
+  position: relative;
+}
+
+.portfolio__panel-zoom-button {
+  color: red;
+  font-size: 1.5rem;
+  pointer-events: none;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.portfolio__image {
+  cursor: pointer;
+}
+
+.portfolio__image-panel {
+  animation: fade-in 0.3s ease;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.portfolio__image-panel-background {
+  background-color: black;
+  height: 100%;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.portfolio__image-panel--active {
+  display: block;
+}
+
+.portfolio__image-panel-button {
+  background: none;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  outline: 0;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.portfolio__image-panel-image {
+  height: auto;
+  left: 50%;
+  max-height: calc(100% - 10vh);
+  max-width: calc(100% - 10vw);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (min-width: 768px) {
+  .portfolio__nav-inner {
+    padding: 2rem 4rem;
+  }
+  .portfolio__nav-list {
+    justify-content: space-between;
+  }
+  .portfolio__research-goals {
+    display: flex;
+    > :first-child {
+      margin-right: 2rem;
+      width: 25%;
+    }
+    > :nth-child(2) {
+      width: 75%;
+    }
+  }
+  .portfolio__side-by-side {
+    display: flex;
+    > :first-child {
+      margin-bottom: 0;
+      margin-right: 4rem;
+      width: 50%;
+    }
+    > :nth-child(2) {
+      width: 50%;
+    }
+  }
+  .portfolio__side-by-side--weight-left {
+    > :first-child {
+      width: 40%;
+    }
+    > :nth-child(2) {
+      width: 60%;
+    }
+  }
+  .portfolio__card {
+    padding: 3rem 2rem;
+  }
+}
