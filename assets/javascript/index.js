@@ -42,12 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
     portfolioButton.addEventListener('mouseleave', function() {
       navTimer = setTimeout(function() {
         portfolioDropdown.classList.remove('nav__dropdown--active');
-      }, 500);
+      }, 250);
     });
     portfolioDropdown.addEventListener('mouseleave', function() {
       navTimer = setTimeout(function() {
         portfolioDropdown.classList.remove('nav__dropdown--active');
-      }, 500);
+      }, 250);
     });
   }
 

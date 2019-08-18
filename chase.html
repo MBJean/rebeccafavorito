@@ -3,7 +3,355 @@ layout: default
 ---
 
 <section class="section hero">
-  <h1>Chase</h1>
+  <h1>Chase: My Budget</h1>
   <p>Mobile App Feature</p>
-  <p>Coming soon!</p>
+  <div class="chase__hero">
+    <img src="assets/images/portfolio-high-resolution/chase-hero.jpg" alt="An image of three mobile devices with the new Chase: My Budget feature displayed on their screens"/>
+  </div>
+</section>
+
+<nav id="portfolio-nav" class="portfolio__nav">
+  <div class="portfolio__nav-inner">
+    <ul class="portfolio__nav-list">
+      <li>
+        <a href="#introduction" class="nav__link nav__link--animated">Introduction</a>
+      </li>
+      <li>
+        <a href="#research" class="nav__link nav__link--animated">Research</a>
+      </li>
+      <li>
+        <a href="#define" class="nav__link nav__link--animated">Define</a>
+      </li>
+      <li>
+        <a href="#design" class="nav__link nav__link--animated">Design</a>
+      </li>
+      <li>
+        <a href="#testing" class="nav__link nav__link--animated">Testing</a>
+      </li>
+      <li>
+        <a href="#conclusion" class="nav__link nav__link--animated">Conclusion</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="portfolio-panel" class="portfolio__image-panel">
+  <div id="portfolio-panel-background" class="portfolio__image-panel-background"></div>
+  <button id="portfolio-panel-button" class="portfolio__image-panel-button">
+    <i class="material-icons">close</i>
+  </button>
+</div>
+
+<section id="introduction" class="section">
+  <h2>Introduction</h2>
+  <div class="section--backgrounds">
+    <section class="section--background">
+      <h3 class="h--4">Brief</h3>
+      <p>Create a personal financial management tool for the Chase mobile app. The tool should be targeted toward helping millennials address their financial challenges.</p>
+    </section>
+    <section class="section--background">
+      <h3 class="h--4">Goals</h3>
+      <p>1. Design a new personal finance management tool that embeds within the current Chase iOS app. Make sure it embeds well and smoothly with the rest of the app.</p>
+    </section>
+    <section class="section--background">
+      <h3 class="h--4">Overview</h3>
+      <p><strong>Role:</strong> sole end-to-end UX/UI designer</p>
+      <p><strong>Timeline:</strong> 2 weeks</p>
+    </section>
+  </div>
+</section>
+
+<section id="research" class="section">
+  <h2>Research</h2>
+  <section class="section--no-padding">
+    <h3>Research Goals</h3>
+    <div class="portfolio__research-goals">
+      <p class="h--4">We want to...</p>
+      <ol class="ol">
+        <li>identify user needs and pain points when creating personal budgets and setting financial goals</li>
+        <li>understand potential user needs and pain points when working with personal budgeting and goal-setting tools within a mobile banking app</li>
+        <li>identify widely regarded best practices for creating personal budgets and setting financial goals</li>
+        <li>identify the standard interaction and design patterns used in the Chase app</li>
+      </ol>
+    </div>
+    <div class="portfolio__research-goals">
+      <p class="h--4">in order to...</p>
+      <p>create a user-friendly tool that integrates smoothly into the Chase app and helps users improve their personal financial management.</p>
+    </div>
+  </section>
+  <section class="section--no-padding">
+    <h3>Competitive Analysis</h3>
+    <div class="portfolio__side-by-side">
+      <div>
+        <p>My analysis of competitor travel sites showed that a strong personal financial management tool should:</p>
+        <ol class="ol">
+          <li>be automated whenever possible</li>
+          <li>use visuals to communicate status</li>
+          <li>provide both summaries and detail reports</li>
+          <li>use notifications and warnings to engage the user</li>
+          <li>provide information and advice when possible</li>
+        </ol>
+      </div>
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-competitive-analysis.jpg" alt="An image depicting competitive analysis for Chase: My Budget" class="portfolio__image" />
+      </div>
+    </div>
+  </section>
+  <section class="section--no-padding">
+    <h3>User Research</h3>
+    <div class="portfolio__side-by-side">
+      <div>
+        <p>I created a 10-question survey based on the project brief, research goals, and competitive analysis. The survey was targeted to millennials, defined as those born from 1981 through 1996, and was posted on social media sites including Facebook and Slack.</p>
+        <p>In the first section, participants were asked demographic questions to determine whether millennials of different ages might have different financial needs. In the second section, participants were asked questions about their financial status and how they currently manage their personal finances.</p>
+        <p>The 32 respondents shared similar motivations and pain points in managing their finances:</p>
+        <div class="portfolio__side-by-side">
+          <div>
+            <h4>Motivations</h4>
+            <ul class="ul">
+              <li>Help setting up budget and performing ongoing budget management</li>
+              <li>Maximum automation</li>
+              <li>Clean interfaces and clear visuals</li>
+              <li>Customization options</li>
+              <li>Concise financial education and tips</li>
+              <li>Tools for ongoing budget management, including notifications and regular check-ins</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Pain Points</h4>
+            <ul class="ul">
+              <li>Budgets are time consuming to create and difficult to follow</li>
+              <li>Many bank apps have clunky interfaces</li>
+              <li>They are hindered by lack on knowledge about personal financial management, especially investing</li>
+              <li>Busting the budget is common and discouraging</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-user-research.jpg" alt="An image depicting the scripts for user interviews for Chase: My Budget" class="portfolio__image" />
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="define" class="section">
+  <h2>Define</h2>
+  <section class="section--no-padding">
+    <h3>Persona</h3>
+    <p class="style--75">Three personas were created to represent the different ages and main financial concerns of the survey participants. The survey data showed that millennials in their mid 20s (Nick), late 20s to early 30s (Noel), and mid 30s (Ana) tended to have somewhat different budgeting and savings needs while sharing many overall concerns regarding personal financial management.</p>
+    <div class="portfolio__side-by-side--threes">
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-persona-1.jpg" alt="An image with user persona information for Nick" class="portfolio__image" />
+      </div>
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-persona-2.jpg" alt="An image with user persona information for Noel" class="portfolio__image" />
+      </div>
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-persona-3.jpg" alt="An image with user persona information for Ana" class="portfolio__image" />
+      </div>
+    </div>
+  </section>
+  <section class="section--no-padding">
+    <h3>Empathy Map</h3>
+    <p class="style--75">Mapping out the feelings, influences, tasks, pains, and gains of Nick, Noel, and Ana helped me emphathize with their needs and understand the contexts of their daily lives and personal finances that would affect their use of the personal financial management feature.</p>
+    <div class="portfolio__side-by-side--threes">
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-empathy-map-1.jpg" alt="An image with an empathy map for Nick" class="portfolio__image" />
+      </div>
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-empathy-map-2.jpg" alt="An image with an empathy map for Noel" class="portfolio__image" />
+      </div>
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-empathy-map-3.jpg" alt="An image with an empathy map for Ana" class="portfolio__image" />
+      </div>
+    </div>
+  </section>
+  <section class="section--no-padding">
+    <h3>Storyboards</h3>
+    <p class="style--75">Imagining the scenarios in which Nick, Noel, and Ana would encounter and use the Chase app’s new personal financial management tool helped me understand potential problem areas, identify necessary features for the tool, and begin mapping out task and user flows based on how users would first engage with and then regularly interact with the tool.</p>
+    <div class="portfolio__side-by-side--threes">
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-storyboard-1.jpg" alt="An image with a storyboard for Nick using Chase: My Budget" class="portfolio__image" />
+      </div>
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-storyboard-2.jpg" alt="An image with a storyboard for Noel using Chase: My Budget" class="portfolio__image" />
+      </div>
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-storyboard-3.jpg" alt="An image with a storyboard for Ana using Chase: My Budget" class="portfolio__image" />
+      </div>
+    </div>
+  </section>
+  <section class="section--no-padding">
+    <h3>Product Roadmap</h3>
+    <div class="portfolio__side-by-side portfolio__side-by-side--weight-left">
+      <p>I created a product roadmap to list, describe, and prioritize the features of the new personal financial management tool. Based on the results of my competitive analysis, secondary research, and user research, I prioritized features that would help users create budgets and savings goals, maintain their budgets, and learn more about personal financial management. The lower priority features supplement and complement the must-have basic features.</p>
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-product-roadmap.jpg" alt="An image depicting a product map for Chase: My Budget" class="portfolio__image" />
+      </div>
+    </div>
+  </section>
+  <section class="section--no-padding">
+    <h3>App Map</h3>
+    <p class="style--75">In order to understand where the new tool would fit smoothly into the Chase app, I mapped out current structure of the app, focusing on the content and links provided in the navigational menu and on each primary page of the app. I then determined where to add in the new feature.  I decided to call the tool “My Budget”  to form a connection with the user and highlight the customizability of the tool.</p>
+    <a href="https://docs.google.com/spreadsheets/d/1y08mQEFekCMUj7-4y4vTjqPsndOF-CC8chx8uOaKeqw/edit?usp=sharing" class="link" target="_blank" title="Visit a page containing the Chase App Map">View the Chase App Map.</a>
+  </section>
+  <section class="section--no-padding">
+    <div class="style--75">
+      <h3>Task and User Flows</h3>
+      <p>I then created task flows and user flows to explore in more details how users would interact with the app both initially and on a regular basis. I found mapping out the onboarding and check-in processes to be important for understanding how users would customize the app to suit their own needs and mapping out tasks such as checking budget alerts to be important for understanding how users would interact with the app on a regular basis. I created user flows for the onboaring processes, checking a budget alert (depicted below), completing a check-in, and learning about investing/opening an investment account.</p>
+      <div class="portfolio__side-by-side portfolio__side-by-side--weight-right">
+        <div class="portfolio__image-container">
+          <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+          <img src="assets/images/portfolio-thumbnails/chase-task-flow-1.jpg" alt="An image depicting a Chase: My Budget task flow" class="portfolio__image" />
+        </div>
+        <div class="portfolio__image-container">
+          <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+          <img src="assets/images/portfolio-thumbnails/chase-task-flow-2.jpg" alt="An image depicting a Chase: My Budget user flow" class="portfolio__image" />
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="design" class="section">
+  <h2>Design</h2>
+  <section class="section--no-padding">
+    <h3>Wireframes</h3>
+    <p class="style--75">I began by studying the Chase app, including taking screenshots of different pages and features. I then sketched out some variants of the main My Budget screens before using Sketch to create mid-fidelity wireframes. To fulfill the goal of having My Budget fit seamlessly into the Chase app, I used the existing UI design of the app whenever possible, including replicating the design of items such as graphs from other parts of the app.  I annotated the mid-fidelity wireframes to note key features and interactions and show the flows between screens.</p>
+    <section class="section--no-padding">
+      <div class="portfolio__side-by-side--threes">
+        <div class="portfolio__image-container">
+          <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+          <img src="assets/images/portfolio-thumbnails/chase-wireframes-1.jpg" alt="A wireframe sketch for the Chase: My Budget app feature" class="portfolio__image" />
+        </div>
+        <div class="portfolio__image-container">
+          <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+          <img src="assets/images/portfolio-thumbnails/chase-wireframes-2.jpg" alt="A wireframe sketch for the Chase: My Budget app feature" class="portfolio__image" />
+        </div>
+        <div class="portfolio__image-container">
+          <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+          <img src="assets/images/portfolio-thumbnails/chase-wireframes-3.jpg" alt="A wireframe sketch for the Chase: My Budget app feature" class="portfolio__image" />
+        </div>
+      </div>
+    </section>
+    <div class="portfolio__image-container portfolio__image-container--50">
+      <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+      <img src="assets/images/portfolio-thumbnails/chase-wireframes-4.jpg" alt="A wireframe user flow for the Chase: My Budget app feature" class="portfolio__image" />
+    </div>
+  </section>
+  <section class="section--no-padding">
+    <h3>Prototype</h3>
+    <p class="style--75">I then expanded the wireframes  into a prototype in InVision to test user flows and prepare for usability testing.</p>
+    <p class="style--75">View the prototype: <a href="#" class="link" target="_blank">PLACEHOLDER</a></p>
+  </section>
+  <section class="section--no-padding">
+    <h3>UI Designs</h3>
+    <p class="style--75">I applied the existing Chase app brand style and UI patterns to build out the UI designs for My Budget, adapting the style as necessary for new features. The UI design notably employs the iconic Chase blue palette to create a clear hierarchy and effective visuals. I also created several new icons for My Budget using the existing icons for the Daily Snapshot feature as models.</p>
+    <div class="portfolio__side-by-side--threes">
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-ui-design-1.jpg" alt="A complete UI design for the Chase: My Budget app feature" class="portfolio__image" />
+      </div>
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-ui-design-2.jpg" alt="A complete UI design for the Chase: My Budget app feature" class="portfolio__image" />
+      </div>
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-ui-design-3.jpg" alt="A complete UI design for the Chase: My Budget app feature" class="portfolio__image" />
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="testing" class="section">
+  <div class="section--no-padding">
+    <div class="style--75">
+      <h2>Testing</h2>
+      <h3>Usability Testing</h3>
+      <p>To test the structure and flow of the site, I conducted in-remote usability tests using the Invision prototype and Maze. Because My Budget closely follows the use and interaction patterns of the existing Chase app, I limited participants to millennials who are current users of the Chase app to ensure my results focused on the usability of the new feature rather than of the Chase app itself. The scenarios focus on ways in which users would interact with the app on a regular basis.</p>
+      <div class="section--scenarios">
+        <section class="section--scenario">
+          <h3 class="h--4">Scenario 1</h3>
+          <p>1. Adjust the monthly budget for the Automotive budget category from $350 to $325.</p>
+        </section>
+        <section class="section--scenario">
+          <h3 class="h--4">Scenario 2</h3>
+          <p>2. Adjust the monthly contribution to the Emergency Fund savings goal from $200 to $225.</p>
+        </section>
+      </div>
+      <p>Users were able to complete both scenarios successfully.</p>
+      <div class="portfolio__side-by-side">
+        <div>
+          <h4>Scenario 1</h4>
+          <ul class="ul">
+            <li>Completion rate: 100%</li>
+            <li>Misclick rate: 8.3%</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Scenario 2</h4>
+          <ul class="ul">
+            <li>Completion rate: 100%</li>
+            <li>Misclisk rate: 0%</li>
+          </ul>
+        </div>
+      </div>
+      <br/>
+      <p>After completing each scenario, users were asked to provide reflections on the ease of the tasks and how well the new feature integrated into the Chase app in terms of design and functionality.</p>
+    </div>
+  </div>
+  <section class="section--no-padding">
+    <h3>Affinity Map</h3>
+    <div class="portfolio__side-by-side">
+      <div>
+        <p>Using the test participants’ reflections, I created an affinity map that drew out the similarities in their responses to the My Budget feature, its usability, and its design. Their main reflections:</p>
+        <ul class="ul">
+          <li>My Budget felt similar to the rest of the Chase app and behaved as expected</li>
+          <li>The tasks were straightfoward and intuitive to complete</li>
+          <li>Some thought the visiblity of the CTAs was good, while others had difficulty finding certain CTAs at first</li>
+        </ul>
+      </div>
+      <div class="portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/chase-affinity-map.jpg" alt="An image depicting a card sorting diagram for the Chase: My Budget app feature" class="portfolio__image" />
+      </div>
+    </div>
+  </section>
+  <section class="section--no-padding">
+    <h3>Results</h3>
+    <p class="style--75">Based on the results of the usability testing, I determined that My Budget is well integrated into the Chase app and that no major changes were needed to the design. I considered whether a design change was needed to highlight some of the CTAs, but determined that this issue would likely be resolved by the application of the UI design. The overwhelming success rate for the usability testing, however, suggests that the scenarios may have been too easy overall.</p>
+  </section>
+</section>
+
+<section id="conclusion" class="section">
+  <h2>Conclusion</h2>
+  <h3>Summary</h3>
+  <div class="portfolio__side-by-side">
+    <div>
+      <p>This was my first mobile app project. As a current user of the Chase mobile app, I found it fun to explore the app in depth and interesting to think about ways in which the app could further serve Chase customers. And as a millennial myself, I closely identified with the concerns of my users regarding their finances and their aspirations for tools that could help them create and manage budgets more easily and learn more about personal financial management.</p>
+      <p>I learned a lot about the challenges of working within an existing information architecture, user experience design, and user interface design. One of the more difficult aspects of this project was making sure I correctly understood the existing interaction patterns in the app and applied them consistently to My Budget. Since the only mobile designs I’d worked on previously were for mobile websites, I also had to think carefully about the functionality and design differences between mobile websites and mobile apps.</p>
+    </div>
+    <div class="portfolio__card portfolio__card--green">
+      <h3 class="h--4 style--center">Next Steps</h3>
+      <p>Were this project to continue, there are several steps I would take to improve the user experience and design.</p>
+      <ol class="ol">
+        <li>Build out additional wireframes, including the navigation menu.</li>
+        <li>Define more challenging tasks for usability testing, build out the nessary wireframes, and complete a second round of usability testing.</li>
+        <li>Confirm that all interaction patterns conform to patterns already existing in the Chase app or have justifiable reasons to be new/different.</li>
+      </ol>
+    </div>
+  </div>
 </section>
