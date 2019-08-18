@@ -29,7 +29,10 @@
 }
 
 .portfolio__card {
-  padding: 2rem 1rem;
+  left: -1rem;
+  padding: 3rem 1rem;
+  position: relative;
+  width: calc(100% + 2rem);
 }
 
 .portfolio__card--green {
@@ -163,7 +166,9 @@
     }
   }
   .portfolio__card {
-    padding: 3rem 2rem;
+    left: 0;
+    padding: 3rem;
+    width: 100%;
   }
   .portfolio__image-container--50 {
     margin: auto;

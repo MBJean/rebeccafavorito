@@ -3,6 +3,7 @@
 }
 
 .hero--landing {
+  margin-bottom: 0;
   padding-bottom: 10vh;
 }
 
@@ -31,6 +32,9 @@
 @media (min-width: 768px) {
   .hero {
     padding-top: calc(3em + 20vh);
+  }
+  .hero--landing {
+    margin-bottom: 4rem;
   }
   .hero--about {
     display: flex;
