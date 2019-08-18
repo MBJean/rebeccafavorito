@@ -1,0 +1,50 @@
+.hero {
+  padding-top: calc(3em + 10vh);
+}
+
+.hero--landing {
+  padding-bottom: 10vh;
+}
+
+.hero__text--landing {
+  max-width: 725px;
+}
+
+.hero--about {
+  > :first-child {
+    margin-bottom: 2rem;
+  }
+  > :nth-child(2) {
+    text-align: center;
+  }
+  img {
+    border-radius: 50%;
+    box-shadow: $box-shadow;
+    height: auto;
+    width: 100%;
+  }
+  .btn {
+    margin: 2rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: calc(3em + 20vh);
+  }
+  .hero--about {
+    display: flex;
+    align-items: center;
+    > :first-child {
+      width: 75%;
+    }
+    > :nth-child(2) {
+      margin-bottom: 0;
+      margin-left: 2rem;
+      width: 25%;
+    }
+    .btn {
+      margin: 2rem 0 0;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1;
+}
+
+body {
+  background-color: $white;
+  color: $font-color;
+  font-family: $font-body;
+}
+
+main {
+  min-height: 80vh;
+}
+
+h1,
+h2 {
+  font-family: $font-header;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-family: $font-header;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h4,
+.h--4 {
+  font-family: $font-body;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.p--large {
+  font-size: 18px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  color: $font-color;
+  font-weight: bold;
+  &:hover,
+  &:focus,
+  &:visited {
+    color: $font-color;
+  }
+}
+
+.link {
+  color: $red;
+  &:hover,
+  &:focus,
+  &:visited {
+    color: $red;
+  }
+}
+
+.ol,
+.ul {
+  padding-left: 1rem;
+  li {
+    line-height: 1.5;
+  }
+  li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.ol {
+  list-style: decimal;
+}
+
+.ul {
+  list-style: disc;
+}
+
+@media (min-width: 768px) {
+  h1,
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4,
+  .h--4 {
+    font-size: 1rem;
+  }
+  section {
+    padding: 0 2rem;
+  }
+}

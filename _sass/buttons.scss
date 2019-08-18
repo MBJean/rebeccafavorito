@@ -1,0 +1,38 @@
+.btn {
+  background-color: $red;
+  border-radius: 2pt;
+  box-shadow: $box-shadow;
+  color: $white;
+  display: inline-block;
+  font-family: $font-body;
+  font-weight: normal;
+  padding: 1.1rem 2.2rem;
+  &:hover,
+  &:focus,
+  &:visited {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.btn--no-style {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  border-image: none;
+  color: $font-color;
+  cursor: pointer;
+  font-family: $font-body;
+  padding: 0;
+  outline: 0;
+  &:hover,
+  &:focus,
+  &:visited {
+    color: $font-color;
+    text-decoration: none;
+  }
+}
+
+.btn--disabled {
+  background-color: $grey;
+}
