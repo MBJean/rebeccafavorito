@@ -64,6 +64,15 @@ a {
   }
 }
 
+.link {
+  color: $red;
+  &:hover,
+  &:focus,
+  &:visited {
+    color: $red;
+  }
+}
+
 .ol,
 .ul {
   padding-left: 1rem;

@@ -14,16 +14,23 @@
   margin-bottom: 4rem;
 }
 
+.section--scenarios {
+  margin-bottom: 2rem;
+}
+
 .section--featured,
-.section--background {
+.section--background,
+.section--scenario {
   left: -1rem;
   padding: 3rem 1rem;
   position: relative;
   width: calc(100% + 2rem);
 }
 
-.section--background {
-  h2 {
+.section--background,
+.section--scenario {
+  h2,
+  h3 {
     text-align: center;
   }
 }
@@ -46,7 +53,7 @@
   background-color: $blue1;
 }
 .section--featured-chase {
-  background-color: $blue2;
+  background-color: $green3;
 }
 .section--featured-latin-toolkit {
   background-color: $green1;
@@ -55,15 +62,18 @@
   background-color: $green2;
 }
 
-.section--background {
+.section--background,
+.section--scenario {
   color: $white;
 }
 
-.section--background:first-child {
+.section--background:first-child,
+.section--scenario:first-child {
   background-color: $blue1;
 }
 
-.section--background:nth-child(2) {
+.section--background:nth-child(2),
+.section--scenario:nth-child(2) {
   background-color: $green3;
 }
 
@@ -89,12 +99,14 @@
     padding: 0 2rem;
   }
   .section--featured,
-  .section--background {
+  .section--background,
+  .section--scenario {
     left: 0;
     padding: 3rem;
     width: 100%;
   }
-  .section--background {
+  .section--background,
+  .section--scenario {
     padding: 3rem 2rem;
   }
   .section--featured {
@@ -123,7 +135,8 @@
       padding-right: 2rem;
     }
   }
-  .section--backgrounds {
+  .section--backgrounds,
+  .section--scenarios {
     display: flex;
     width: 100%;
     > * {

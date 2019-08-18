@@ -10,6 +10,10 @@
   box-shadow: $box-shadow;
 }
 
+.style--hyphens {
+  hyphens: auto;
+}
+
 @media (max-width: 767px) {
   .style--hidden-mobile {
     display: none;
@@ -19,5 +23,8 @@
 @media (min-width: 768px) {
   .style--hidden-desktop {
     display: none;
+  }
+  .style--75 {
+    max-width: 75%;
   }
 }

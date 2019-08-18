@@ -52,6 +52,7 @@
 
 .portfolio__image {
   cursor: pointer;
+  width: 100%;
 }
 
 .portfolio__image-panel {
@@ -102,6 +103,17 @@
   width: auto;
 }
 
+.portfolio__side-by-side {
+  > :first-child {
+    margin-bottom: 2rem;
+  }
+}
+.portfolio__side-by-side--threes {
+  > *:not(:last-child) {
+      margin-bottom: 2rem;
+  }
+}
+
 @keyframes fade-in {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -133,6 +145,13 @@
     }
     > :nth-child(2) {
       width: 50%;
+    }
+  }
+  .portfolio__side-by-side--threes {
+    display: flex;
+    > *:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 4rem;
     }
   }
   .portfolio__side-by-side--weight-left {
