@@ -152,6 +152,10 @@
   }
   .portfolio__side-by-side--threes {
     display: flex;
+    width: 100%;
+    > * {
+      flex: 1 0 0;
+    }
     > *:not(:last-child) {
       margin-bottom: 0;
       margin-right: 4rem;
@@ -163,6 +167,14 @@
     }
     > :nth-child(2) {
       width: 60%;
+    }
+  }
+  .portfolio__side-by-side--weight-right {
+    > :first-child {
+      width: 60%;
+    }
+    > :nth-child(2) {
+      width: 40%;
     }
   }
   .portfolio__card {

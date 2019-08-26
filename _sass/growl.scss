@@ -1,0 +1,15 @@
+.growl__hero {
+  background-color: $blue1;
+  left: -1rem;
+  padding: 1rem;
+  position: relative;
+  width: calc(100% + 2rem);
+}
+
+@media (min-width: 768px) {
+  .chase__hero {
+    left: 0;
+    padding: 4rem 6rem;
+    width: 100%;
+  }
+}
