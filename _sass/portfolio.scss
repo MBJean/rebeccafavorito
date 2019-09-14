@@ -150,6 +150,10 @@
     margin-bottom: 2rem;
   }
 }
+.portfolio__side-by-side:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .portfolio__side-by-side--threes {
   > *:not(:last-child) {
       margin-bottom: 2rem;
@@ -176,6 +180,10 @@
 .carousel__dot--active {
   background-color: $red;
   transform: scale(1.3);
+}
+
+.portfolio__image-container--logo {
+  max-width: 10rem;
 }
 
 @keyframes fade-in {
@@ -229,18 +237,18 @@
   }
   .portfolio__side-by-side--weight-left {
     > :first-child {
-      width: 40%;
+      width: 33%;
     }
     > :nth-child(2) {
-      width: 60%;
+      width: 66%;
     }
   }
   .portfolio__side-by-side--weight-right {
     > :first-child {
-      width: 60%;
+      width: 66%;
     }
     > :nth-child(2) {
-      width: 40%;
+      width: 33%;
     }
   }
   .portfolio__card {

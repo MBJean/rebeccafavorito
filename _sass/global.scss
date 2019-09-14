@@ -91,6 +91,11 @@ a {
   }
 }
 
+.ol:not(:last-child),
+.ul:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .ol {
   list-style: decimal;
 }
