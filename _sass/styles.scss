@@ -14,6 +14,18 @@
   hyphens: auto;
 }
 
+.style--no-margin {
+  margin: 0;
+}
+
+.style--margin-bottom-2 {
+  margin-bottom: 2rem;
+}
+
+.style--margin-bottom-3 {
+  margin-bottom: 3rem;
+}
+
 @media (max-width: 767px) {
   .style--hidden-mobile {
     display: none;
@@ -23,6 +35,9 @@
 @media (min-width: 768px) {
   .style--hidden-desktop {
     display: none;
+  }
+  .style--66 {
+    max-width: 66%;
   }
   .style--75 {
     max-width: 75%;
