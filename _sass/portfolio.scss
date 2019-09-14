@@ -1,3 +1,12 @@
+.portfolio__header {
+  margin-bottom: 0;
+}
+
+.portfolio__subheader {
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
 .portfolio__nav {
   background-color: $white;
   margin-bottom: 4rem;
@@ -215,13 +224,13 @@
   }
   .portfolio__side-by-side {
     display: flex;
+    justify-content: space-between;
     > :first-child {
       margin-bottom: 0;
-      margin-right: 4rem;
-      width: 50%;
+      width: 45.8%;
     }
     > :nth-child(2) {
-      width: 50%;
+      width: 45.8%;
     }
   }
   .portfolio__side-by-side--threes {
@@ -232,20 +241,24 @@
     }
     > *:not(:last-child) {
       margin-bottom: 0;
-      margin-right: 4rem;
+      margin-right: 1rem;
     }
+  }
+  .portfolio__side-by-side--weight-left,
+  .portfolio__side-by-side--weight-right {
+    justify-content: space-between;
   }
   .portfolio__side-by-side--weight-left {
     > :first-child {
       width: 33%;
     }
     > :nth-child(2) {
-      width: 66%;
+      width: 58.33%;
     }
   }
   .portfolio__side-by-side--weight-right {
     > :first-child {
-      width: 66%;
+      width: 58.33%;
     }
     > :nth-child(2) {
       width: 33%;

@@ -3,8 +3,8 @@ layout: default
 ---
 
 <section class="section hero">
-  <h1>GROWL!</h1>
-  <p>Local Business Responsive Website</p>
+  <h1 class="portfolio__header">GROWL!</h1>
+  <p class="portfolio__subheader">Local Business Responsive Website</p>
   <div class="growl__hero">
     <img src="assets/images/portfolio-thumbnails/growl-hero.jpg" alt="An image of a laptop featuring the GROWL! website landing page"/>
   </div>
@@ -51,8 +51,10 @@ layout: default
     </section>
     <section class="section--background">
       <h3 class="h--4">Goals</h3>
-      <p>1. Design an updated, responsive website that is user friendly and on brand.</p>
-      <p>2. Incorporate best practices for SEO.</p>
+      <ol class="ol">
+        <li>Design an updated, responsive website that is user friendly and on brand.</li>
+        <li>Incorporate best practices for SEO.</li>
+      </ol>
     </section>
     <section class="section--background">
       <h3 class="h--4">Overview</h3>
@@ -82,8 +84,8 @@ layout: default
   </section>
   <section class="section--no-padding">
     <h3>Competitive Analysis</h3>
-    <div class="portfolio__side-by-side">
-      <div>
+    <div class="container">
+      <div class="column column--6">
         <p>My analysis of local bars, brewries, and restaurants in competition with GROWL! showed that strong local business websites should:</p>
         <ol class="ol">
           <li>have strong branding</li>
@@ -93,21 +95,23 @@ layout: default
           <li>avoiding loading and accessibility issues</li>
         </ol>
       </div>
-      <div class="portfolio__image-container">
-        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
-        <img src="assets/images/portfolio-thumbnails/growl-competitive-analysis.jpg" alt="An image depicting competitive analysis for GROWL!" class="portfolio__image" />
+      <div class="column column--6">
+        <div class="portfolio__image-container">
+          <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+          <img src="assets/images/portfolio-thumbnails/growl-competitive-analysis.jpg" alt="An image depicting competitive analysis for GROWL!" class="portfolio__image" />
+        </div>
       </div>
     </div>
   </section>
   <section class="section--no-padding">
     <h3>User Research</h3>
-    <div class="portfolio__side-by-side portfolio__side-by-side--weight-right">
-      <div>
+    <div class="container">
+      <div class="column column--8">
         <p>I created an 11-question survey based on the project brief, research goals, and competitive analysis. The survey was targeted to current GROWL! customers and advertised on flyers in the bar and on social media.</p>
         <p>In the first section, participants were asked demographic questions to help identify GROWLS!’s main customer bases. In the second section, participants were asked questions about their patronage of GROWL! Finally, participants were asked questions about the GROWL! website.</p>
         <p>The 32 respondents shared many similar characteristics and opinions about GROWL! and its website.</p>
-        <div class="portfolio__side-by-side">
-          <div>
+        <div class="container">
+          <div class="column column--6">
             <h4>How They Decribed GROWL!</h4>
             <ul class="ul">
               <li>Good beer</li>
@@ -115,7 +119,7 @@ layout: default
               <li>Friendly, chill, positive</li>
             </ul>
           </div>
-          <div>
+          <div class="column column--6">
             <h4>How They Described the Ideal GROWL! Website</h4>
             <ul class="ul">
               <li>Multipage design instead of scrolling one page</li>
@@ -126,9 +130,12 @@ layout: default
           </div>
         </div>
       </div>
-      <div class="portfolio__image-container">
-        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
-        <img src="assets/images/portfolio-thumbnails/growl-user-research.jpg" alt="An image depicting the scripts for user interviews for GROWL!" class="portfolio__image" />
+      <div class="column column--1"></div>
+      <div class="column column--3">
+        <div class="portfolio__image-container">
+          <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+          <img src="assets/images/portfolio-thumbnails/growl-user-research.jpg" alt="An image depicting the scripts for user interviews for GROWL!" class="portfolio__image" />
+        </div>
       </div>
     </div>
   </section>
@@ -139,16 +146,16 @@ layout: default
   <section class="section--no-padding">
     <h3>Persona</h3>
     <p class="style--75">Three personas were created to represent the different age ranges and frequency of GROWL! patronage of the survey participants. The survey data showed that patrons liked GROWL! because of its friendly and relaxed atmosphere. They appreciated the lack of loud music, the unique features such as the art displays and record player, and the friendliness of the staff and other patrons.</p>
-    <div class="portfolio__side-by-side--threes">
-      <div class="portfolio__image-container">
+    <div class="container">
+      <div class="column column--4 portfolio__image-container">
         <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
         <img src="assets/images/portfolio-thumbnails/growl-persona-1.jpg" alt="An image with user persona information for Jake" class="portfolio__image" />
       </div>
-      <div class="portfolio__image-container">
+      <div class="column column--4 portfolio__image-container">
         <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
         <img src="assets/images/portfolio-thumbnails/growl-persona-2.jpg" alt="An image with user persona information for Megan" class="portfolio__image" />
       </div>
-      <div class="portfolio__image-container">
+      <div class="column column--4 portfolio__image-container">
         <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
         <img src="assets/images/portfolio-thumbnails/growl-persona-3.jpg" alt="An image with user persona information for Sarah" class="portfolio__image" />
       </div>
@@ -156,19 +163,23 @@ layout: default
   </section>
   <section class="section--no-padding">
     <h3>Product Roadmap</h3>
-    <div class="portfolio__side-by-side portfolio__side-by-side--weight-left">
-      <p>I created a product roadmap to list, describe, and prioritize the features of the updated GROWL! site. Based on my survey data, I prioritized features that customers wanted to see on the site such as a live beer list. The second ranked priorities included features that would allow the business owner to regularly update the site, such as a news feature, and that would help attract new customers, such as reviews.</p>
-      <div class="portfolio__image-container">
-        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
-        <img src="assets/images/portfolio-thumbnails/growl-product-roadmap.jpg" alt="An image depicting a product map for GROWL!" class="portfolio__image" />
+    <div class="container">
+      <div class="column column--7">
+        <p>I created a product roadmap to list, describe, and prioritize the features of the updated GROWL! site. Based on my survey data, I prioritized features that customers wanted to see on the site such as a live beer list. The second ranked priorities included features that would allow the business owner to regularly update the site, such as a news feature, and that would help attract new customers, such as reviews.</p>
+      </div>
+      <div class="column column--5">
+        <div class="portfolio__image-container">
+          <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+          <img src="assets/images/portfolio-thumbnails/growl-product-roadmap.jpg" alt="An image depicting a product map for GROWL!" class="portfolio__image" />
+        </div>
       </div>
     </div>
   </section>
   <section class="section--no-padding">
     <h3>Site Map</h3>
-    <p>Based on business needs and the survey results, I created a site map for GROWL! The site has a simple and clear hierarchy and navigation structure to make it user friendly.</p>
-    <div class="style--75">
-      <div class="portfolio__image-container">
+    <p class="style--75">Based on business needs and the survey results, I created a site map for GROWL! The site has a simple and clear hierarchy and navigation structure to make it user friendly.</p>
+    <div class="container">
+      <div class="column column--7 portfolio__image-container">
         <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
         <img src="assets/images/portfolio-thumbnails/growl-sitemap.jpg" alt="An image depicting a sitemap for GROWL!" class="portfolio__image" />
       </div>
@@ -180,16 +191,14 @@ layout: default
   <h2>Design</h2>
   <section class="section--no-padding">
     <h3>Wireframes</h3>
-    <div class="portfolio__side-by-side">
-      <div>
+    <div class="container">
+      <div class="column column--5">
         <p>I began by creating mid-fidelity wireframes for the Homepage and About page, and then created variations on those layouts for the other pages of the site. The wireframes establish visual hiearchy through color and layout and emphasize the use images to create a sense of the atmosphere and character of GROWL!</p>
         <p>I also created wireframes for the mobile version of the site (not pictured). They layout of all the pages would be further refined as I worked on the UI designs, including shrinking the size of the hero images somewhat to ensure other content appeared above the fold, encouraging users to scroll.</p>
       </div>
-      <div>
-        <div class="portfolio__image-container">
-          <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
-          <img src="assets/images/portfolio-thumbnails/growl-wireframes.jpg" alt="A set of wireframe sketches for the GROWL! website" class="portfolio__image" />
-        </div>
+      <div class="column column--7 portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/growl-wireframes.jpg" alt="A set of wireframe sketches for the GROWL! website" class="portfolio__image" />
       </div>
     </div>
   </section>
@@ -200,15 +209,11 @@ layout: default
   </section>
   <section class="section--no-padding">
     <h3>Brand Tile</h3>
-    <div class="portfolio__side-by-side">
-      <div>
-        <p>I created a brand tile for GROWL! based on the existing logo and brand colors. The brand tile defines the brand attributes derived from my user research, an expanded color palette, the new typography style, and the image treatment for the redesigned site.</p>
-      </div>
-      <div>
-        <div class="portfolio__image-container">
-          <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
-          <img src="assets/images/portfolio-thumbnails/growl-brand-tile.jpg" alt="A brand tile for the GROWL! website" class="portfolio__image" />
-        </div>
+    <div class="container">
+      <p class="column column--7">I created a brand tile for GROWL! based on the existing logo and brand colors. The brand tile defines the brand attributes derived from my user research, an expanded color palette, the new typography style, and the image treatment for the redesigned site.</p>
+      <div class="column column--5 portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/growl-brand-tile.jpg" alt="A brand tile for the GROWL! website" class="portfolio__image" />
       </div>
     </div>
   </section>
@@ -222,19 +227,15 @@ layout: default
   </section>
   <section class="section--no-padding">
     <h3>UI Kit</h3>
-    <div class="portfolio__side-by-side portfolio__side-by-side--weight-left">
-      <div>
-        <p>I created a UI kit based on the wireframes and UI designs to serve as a resource for the developer. </p>
+    <div class="container">
+      <p class="column column--4">I created a UI kit based on the wireframes and UI designs to serve as a resource for the developer. </p>
+      <div class="column column--4 portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/growl-ui-kit-1.jpg" alt="A UI kit tile for the GROWL! website" class="portfolio__image" />
       </div>
-      <div class="portfolio__side-by-side">
-        <div class="portfolio__image-container">
-          <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
-          <img src="assets/images/portfolio-thumbnails/growl-ui-kit-1.jpg" alt="A UI kit tile for the GROWL! website" class="portfolio__image" />
-        </div>
-        <div class="portfolio__image-container">
-          <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
-          <img src="assets/images/portfolio-thumbnails/growl-ui-kit-2.jpg" alt="A UI kit tile for the GROWL! website" class="portfolio__image" />
-        </div>
+      <div class="column column--4 portfolio__image-container">
+        <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
+        <img src="assets/images/portfolio-thumbnails/growl-ui-kit-2.jpg" alt="A UI kit tile for the GROWL! website" class="portfolio__image" />
       </div>
     </div>
   </section>
@@ -261,22 +262,22 @@ layout: default
     </div>
     <br />
     <p class="style--75">Users were able to complete all three scenarios successfully, although scenario 1 proved to be somewhat challenging.</p>
-    <div class="portfolio__side-by-side--threes">
-      <div>
+    <div class="container">
+      <div class="column column--4">
         <h4>Scenario 1</h4>
         <ul class="ul">
           <li>Completion rate: 64.3%</li>
           <li>Misclick rate: 36%</li>
         </ul>
       </div>
-      <div>
+      <div class="column column--4">
         <h4>Scenario 2</h4>
         <ul class="ul">
           <li>Completion rate: 83.3%</li>
           <li>Misclisk rate: 16%</li>
         </ul>
       </div>
-      <div>
+      <div class="column column--4">
         <h4>Scenario 3</h4>
         <ul class="ul">
           <li>Completion rate: 100%</li>
@@ -287,11 +288,10 @@ layout: default
   </div>
   <section class="section--no-padding">
     <h3>Affinity Map</h3>
-    <div class="portfolio__side-by-side">
-      <div>
-        <p>I created an affinity map to help with my analysis of the usability testing results. The map highlighted test participants’ comments about the ease of  using and navigating the redesigned site and helped me draw some conclusions about the misclick rates in the three scenarios.</p>
-      </div>
-      <div class="portfolio__image-container">
+    <div class="container">
+      <p class="column column--6">I created an affinity map to help with my analysis of the usability testing results. The map highlighted test participants’ comments about the ease of  using and navigating the redesigned site and helped me draw some conclusions about the misclick rates in the three scenarios.</p>
+      <div class="column column--1"></div>
+      <div class="column column--5 portfolio__image-container">
         <i class="portfolio__panel-zoom-button material-icons">zoom_in</i>
         <img src="assets/images/portfolio-thumbnails/growl-affinity-map.jpg" alt="An image depicting an affinity map for the GROWL! website" class="portfolio__image" />
       </div>
@@ -307,12 +307,13 @@ layout: default
 <section id="conclusion" class="section">
   <h2>Conclusion</h2>
   <h3>Summary</h3>
-  <div class="portfolio__side-by-side">
-    <div>
+  <div class="container">
+    <div class="column column--5">
       <p>Working on this project provided a great opportunity to learn about best practices for local business websites and SEO and to focus on information architecture and visual design. My previous experience as a project manager helped me fulfill my dual roles on the project and communicate effectively with the business owner and developer.</p>
       <p>I learned a lot about balancing the needs of different stakeholders on a UX project and challenges of creating a fresh design within the boundaries of an existing brand style with a defined color palette.</p>
     </div>
-    <div class="portfolio__card portfolio__card--green">
+    <div class="column column--1"></div>
+    <div class="column column--6 portfolio__card portfolio__card--green">
       <h3 class="h--4 style--center">Next Steps</h3>
       <p>This project is currently in development, with the redesigned site scheduled to go live sometime in September 2019. The final steps needed before that can happen are:</p>
       <ol class="ol">
