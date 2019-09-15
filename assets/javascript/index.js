@@ -59,13 +59,13 @@ const carouselFunctionality = function(dataSelector) {
     addActive();
   }
   let activeIndex = 0;
-  carouselClose.addEventListener('click', () => {
+  carouselClose.addEventListener('click', function() {
     carousel.classList.remove('carousel--active');
   });
-  carouselLeft.addEventListener('click', () => {
+  carouselLeft.addEventListener('click', function() {
     moveLeft();
   });
-  carouselRight.addEventListener('click', () => {
+  carouselRight.addEventListener('click', function() {
     moveRight();
   });
   hammertime.on('swipeleft', function(ev) {
@@ -134,14 +134,14 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   if (portfolioPanel) {
-    portfolioPanelButton.addEventListener('click', () => {
+    portfolioPanelButton.addEventListener('click', function() {
       portfolioPanel.classList.remove('portfolio__image-panel--active');
     });
-    portfolioPanelBackground.addEventListener('click', () => {
+    portfolioPanelBackground.addEventListener('click', function() {
       portfolioPanel.classList.remove('portfolio__image-panel--active');
     });
-    portfolioImages.forEach(image => {
-      image.addEventListener('click', (event) => {
+    portfolioImages.forEach(function(image) {
+      image.addEventListener('click', function(event) {
         const oldImg = document.querySelector('#portfolio-panel-image');
         if (oldImg) {
           oldImg.remove();
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (carouselOpeners.length) {
     for (let i = 0; i < carouselOpeners.length; i++) {
-      carouselOpeners[i].addEventListener('click', () => {
+      carouselOpeners[i].addEventListener('click', function() {
         carouselFunctionality('carousel-wireframes');
       });
 
