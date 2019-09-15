@@ -140,8 +140,8 @@ document.addEventListener('DOMContentLoaded', function() {
     portfolioPanelBackground.addEventListener('click', function() {
       portfolioPanel.classList.remove('portfolio__image-panel--active');
     });
-    portfolioImages.forEach(function(image) {
-      image.addEventListener('click', function(event) {
+    for (let i = 0; i < portfolioImages.length; i++) {
+      portfolioImages[i].addEventListener('click', function(event) {
         const oldImg = document.querySelector('#portfolio-panel-image');
         if (oldImg) {
           oldImg.remove();
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
         newImg.classList.add('portfolio__image-panel-image');
         portfolioPanel.appendChild(newImg);
       });
-    });
+    }
   }
 
   if (carouselOpeners.length) {
