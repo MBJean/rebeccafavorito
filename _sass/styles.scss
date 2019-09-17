@@ -10,6 +10,10 @@
   box-shadow: $box-shadow;
 }
 
+.style--box-shadow-small {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+
 .style--hyphens {
   hyphens: auto;
 }
