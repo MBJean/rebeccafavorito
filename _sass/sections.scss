@@ -47,6 +47,9 @@
     height: auto;
     width: 100%;
   }
+  h3 {
+    margin-bottom: 0;
+  }
 }
 
 .section--featured-growl {
@@ -128,10 +131,10 @@
   .section--content-right {
     display: flex;
     > :first-child {
-      flex-basis: 55%;
+      flex-basis: 66%;
     }
     > :nth-child(2) {
-      flex-basis: 45%;
+      flex-basis: 33%;
     }
   }
   .section--content-left {
